@@ -10,7 +10,7 @@ post '/log' do
 	validate = params[:geetest_validate] || ''
 	seccode = params[:geetest_seccode] || ''
 
-	sdk = GeetestSDK.new('ac0ebda33745de763940bc9693d2b31a')
+	sdk = GeetestSDK.new('0f1a37e33c9ed10dd2e133fe2ae9c459')
 	if sdk.validate(challenge, validate, seccode)
 		'successfully'
 	else 
