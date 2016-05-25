@@ -19,6 +19,7 @@ build/
 /_yardoc/
 /doc/
 /rdoc/
+.idea/
 
 ## Environment normalisation:
 /.bundle/
@@ -32,3 +33,6 @@ build/
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
+
+*.swo
+*.swp
