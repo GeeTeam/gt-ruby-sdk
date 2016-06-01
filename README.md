@@ -72,7 +72,7 @@ else
 end #if
 ```
 
-## 如何在sinatra项目中使用geetest 
+## 在sinatra项目中使用geetest
 
 将geetest_ruby_sdk.rb拷贝至当前路径
 
