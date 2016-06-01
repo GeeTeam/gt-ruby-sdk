@@ -25,7 +25,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.10)
+  bundler (~> 1.8)
   gee_test!
   rake (~> 10.0)
 
