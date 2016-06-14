@@ -30,6 +30,12 @@ GeeTest.app_id = 'xxx'
 GeeTest.app_key = 'xx'
 ```
 
+在eruby中使用
+
+```eruby
+<%== GeeTest.gee_test_tag(product: 'embed') %>
+```
+
 ## 如何使用demo
   
 
