@@ -1,6 +1,7 @@
 require 'net/http'
 require 'gee_test/version'
 require 'active_support/core_ext/module/attribute_accessors'
+require 'active_support/core_ext/object/to_query'
 
 module GeeTest
   autoload :Configure, File.expand_path('../gee_test/configure', __FILE__)
@@ -29,8 +30,9 @@ module GeeTest
       res.body
     end
 
-    def gee_test_tag
-      "<script type='text/javascript' src='http://api.geetest.com/get.php?gt=#{app_id}'></script>"
+    def gee_test_tag config={}
+      config = {gt: app_id}.merge config
+      "<script type='text/javascript' src='http://api.geetest.com/get.php?#{config.to_query}'></script>"
     end
   end
 end
