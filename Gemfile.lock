@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    gee_test (0.1.0)
-      activesupport (~> 4.0)
+    gee_test (0.1.1)
+      activesupport (> 4.0)
 
 GEM
   remote: https://rubygems.org/
