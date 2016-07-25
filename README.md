@@ -33,7 +33,7 @@ GeeTest.app_key = 'xx'
 在eruby中使用
 
 ```eruby
-<%== GeeTest.gee_test_tag(product: 'embed') %>
+<%= GeeTest.gee_test_tag(product: 'embed') %>
 ```
 
 在controller中验证
