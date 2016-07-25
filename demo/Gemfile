@@ -1,0 +1,4 @@
+source "https://gems.ruby-china.org"
+
+gem "sinatra"
+gem "gee_test"
