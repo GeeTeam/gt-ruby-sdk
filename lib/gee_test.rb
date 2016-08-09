@@ -32,7 +32,7 @@ module GeeTest
 
     def gee_test_tag config={}
       config.merge! gt: app_id
-      "<script type='text/javascript' src='http://api.geetest.com/get.php?#{config.to_query}'></script>".html_safe
+      "<script type='text/javascript' src='//api.geetest.com/get.php?#{config.to_query}'></script>".html_safe
     end
   end
 end
