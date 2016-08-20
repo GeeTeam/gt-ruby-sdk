@@ -1,10 +1,8 @@
 # Geetest ruby sdk
 
-
-Geetest是一个很不错的验证码组件，使用方便，安全性强。可惜没有ruby的sdk。于是顺手写了一个，由于实在太简单，所以没有做成gem，只留下实现和demo自取。
+Geetest是一个很不错的验证码组件，使用方便，安全性强。
 
 ## 安装
-
 
 ```ruby
 gem 'gee_test'
@@ -17,7 +15,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install gee_test
-
 
 ## Rails 中使用
 
