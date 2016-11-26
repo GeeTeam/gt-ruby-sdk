@@ -8,19 +8,21 @@ Geetest是一个很不错的验证码组件，使用方便，安全性强。
 gem 'gee_test'
 ```
 
-And then execute:
+然后执行:
+```
+$ bundle
+```
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install gee_test
+或者通过gem安装:
+```
+$ gem install gee_test
+```
 
 ## Rails 中使用
 
 在 Rails 项目的 initilizer 中，添加 `geetest.rb`:
 
-```
+```ruby
 require 'gee_test'
 
 GeeTest.app_id = 'xxx'
@@ -46,27 +48,16 @@ else
 end
 ```
 
-## 如何使用demo
-
-```sh
-git clone
-cd gt_ruby_sdk/demo
-bundle
-ruby app.rb
-access localhost:4567 via your browser
-```
-
-## 如何在rails项目中使用geetest
-
-将geetest_ruby_sdk.rb拷贝至lib目录
-
-```html
-在view页面加上
-<script type="text/javascript" src="http://api.geetest.com/get.php?gt=app_id"></script>
-```
-
-其中id为geetest的公钥，这是要注册后才能得到的
 
 ## 在sinatra项目中使用geetest
 
 参考[demo](demo)
+
+## 使用demo
+
+```sh
+cd demo
+bundle
+ruby app.rb
+access localhost:4567 via your browser
+```
