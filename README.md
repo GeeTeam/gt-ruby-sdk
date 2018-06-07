@@ -3,6 +3,13 @@ Geetest ruby sdk
 
 Geetest是一个很不错的验证码组件，使用方便，安全性强。可惜没有ruby的sdk。于是顺手写了一个，由于实在太简单，所以没有做成gem，只留下实现和demo自取。
 
+## 版本说明
+
+目前，本SDK适用于 2.0
+
+对于 3.0感兴趣的同学,建议查看官方网站: https://docs.geetest.com/install/overview/video
+
+其中的视频讲解很不错哦!
 
 ## 如何使用demo
 
