@@ -12,8 +12,8 @@ post '/log' do
 
 	sdk = GeetestSDK.new('0f1a37e33c9ed10dd2e133fe2ae9c459')
 	if sdk.validate(challenge, validate, seccode)
-		'successfully'
-	else 
-		'Can not validate'
+		'验证码正确, 请进行下一步的验证 用户名和邮箱的工作'
+	else
+		'验证码不正确'
 	end #if
 end

@@ -5,16 +5,24 @@ Geetest是一个很不错的验证码组件，使用方便，安全性强。可�
 
 
 ## 如何使用demo
-  
+
 ```
-git clone  
-cd geetest_ruby_sdk
-bundle 
-ruby geetest.rb
-access localhost:4567 via your browser
+$ git clone
+$ cd geetest_ruby_sdk
+$ bundle install
+$ bundle exec ruby geetest.rb
+
+在浏览器中打开: http://localhost:4567 即可. 就会看到下图 所示:
+
+![登陆页面](./login_page.png)
+
+在该页面, 如果用户手动拖拽的结果不正确,就会返回 "验证码不正确"
+
+如果用户手动拖拽的结果正确, 就会返回 "验证码正确, 请进行下一步的验证 用户名和邮箱的工作"
+
 ```
 
-## 如何在rails项目中使用geetest 
+## 如何在rails项目中使用geetest
 
 将geetest_ruby_sdk.rb拷贝至lib目录
 
@@ -37,12 +45,12 @@ seccode = params[:geetest_seccode] || ''
 sdk = GeetestSDK.new('private key')
 if sdk.validate(challenge, validate, seccode)
 	do something
-else 
+else
 	do something
 end #if
 ```
 
-## 如何在sinatra项目中使用geetest 
+## 如何在sinatra项目中使用geetest
 
 将geetest_ruby_sdk.rb拷贝至当前路径
 
@@ -64,10 +72,10 @@ post '/log' do
 	sdk = GeetestSDK.new('private key')
 	if sdk.validate(challenge, validate, seccode)
 		'successfully'
-	else 
+	else
 		'Can not validate'
 	end #if
 end
 ```
-  
+
 
